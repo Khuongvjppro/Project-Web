@@ -1,4 +1,7 @@
-
+<%@page import="project.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<%@include file="adminHeader.jsp" %>
+<%@include file="../footer.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,13 +14,22 @@
 </head>
 <body>
 <div style="color: white; text-align: center; font-size: 30px;">Orders Received <i class="fas fa-archive"></i></div>
-
+<%
+String msg=request.getParameter("msg");
+if("cancel".equals(msg)){
+%>
 <h3 class="alert">Order Cancel Successfully!</h3>
-
+<%} %>
+<%
+if("delivered".equals(msg)){
+%>
 <h3 class="alert">Successfully Updated!</h3>
-
+<%} %>
+<%
+if("invalid".equals(msg)){
+%>
 <h3 class="alert">Some thing went wrong! Try Again!</h3>
-
+<%} %>
 
 <table id="customers">
           <tr>
@@ -26,9 +38,6 @@
             <th scope="col">Quantity</th>
             <th scope="col"><i class="fa fa-inr"></i> Sub Total</th>
             <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Country</th>
             <th scope="col">Order Date</th>
              <th scope="col">Expected Delivery Date</th>
              <th scope="col">Payment Method</th>
@@ -38,16 +47,23 @@
               <th scope="col">Order Delivered <i class='fas fa-dolly'></i></i></th>
           </tr>
         
-       
+ <%
+ int sno=0;
+ try{
+	 Connection con=ConnectionProvider.getCon();
+	 Statement st=con.createStatement();
+ }
+ catch(Exception e){
+	 
+ }
+ %>
           <tr>
           <td></td>
             <td></td>
             <td></td>
             <td><i class="fa fa-inr"></i>  </td>
                 <td></td>
-               <td></td>
-                <td></td>
-                 <td></td>
+               
              <td></td>
               <td></td>
                <td></td>
