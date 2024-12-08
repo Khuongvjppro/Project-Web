@@ -28,20 +28,35 @@
           </tr>
         </thead>
         <tbody>
-
+<%
+int sno=0;
+try{
+	
+	Connection con = ConnectionProvider.getCon();
+	Statement st=con.createStatement();
+	ResultSet rs=st.executeQuery("select *from cart inner join product where cart.product_id=product.id and cart.email='"+email+"' and cart.orderDate is not NULL");
+	while(rs.next()){
+		sno=sno+1;	
+	
+%>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><i class="fa fa-inr"></i> </td>
-            <td></td>
-            <td><i class="fa fa-inr"></i> </td>
-             <td></td>
-              <td></td>
-               <td></td>
-               <td></td>
+            <td><%out.println(sno); %></td>
+            <td><%=rs.getString(14)%></td>
+            <td><%=rs.getString(15)%></td>
+            <td><i class="fa fa-inr"></i> <%=rs.getString(16)%></td>
+            <td><%=rs.getString(3)%></td>
+            <td><i class="fa fa-inr"></i><%=rs.getString(5)%> </td>
+             <td><%=rs.getString(8)%></td>
+              <td><%=rs.getString(9)%></td>
+               <td><%=rs.getString(10)%></td>
+               <td><%=rs.getString(12)%></td>
             </tr>
-         
+         <%
+         }}
+         catch(Exception e){
+        	 System.out.println(e);
+         }
+         %>
         </tbody>
       </table>
       <br>
