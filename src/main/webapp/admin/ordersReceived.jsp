@@ -48,6 +48,7 @@ if("invalid".equals(msg)){
           </tr>
         
  <%
+<<<<<<< HEAD
  try{
 	 Connection con=ConnectionProvider.getCon();
 	 Statement st=con.createStatement();
@@ -69,6 +70,31 @@ if("invalid".equals(msg)){
                <td><%=rs.getString(12) %></td>
                <td><a href="cancelOrdersAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Cancel <i class='fas fa-window-close'></i></a></td>
                 <td><a href="deliveredOrdersAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Delivered <i class='fas fa-dolly'></i></i></a></td>
+=======
+ int sno=0;
+ try{
+	 Connection con=ConnectionProvider.getCon();
+	 Statement st=con.createStatement();
+ }
+ catch(Exception e){
+	 
+ }
+ %>
+          <tr>
+          <td></td>
+            <td></td>
+            <td></td>
+            <td><i class="fa fa-inr"></i>  </td>
+                <td></td>
+               
+             <td></td>
+              <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td><a href="">Cancel <i class='fas fa-window-close'></i></a></td>
+                <td><a href="">Delivered <i class='fas fa-dolly'></i></i></a></td>
+>>>>>>> f63ab89bd9026260cf837f982e2743a760f51fef
             </tr>
         <%  }
 	 }
