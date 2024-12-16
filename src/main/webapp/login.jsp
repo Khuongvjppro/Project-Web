@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/signup-style.css">
+<link rel="stylesheet" href="css/login.css">
 <title>Login</title>
 </head>
 <body>
@@ -11,9 +11,9 @@
      <form action="loginAction.jsp" method="post">
      <input type="email" name="email" placeholder="Enter Email" required>
      <input type="password" name="password" placeholder="Enter Password" required>
-     <input type="submit" value="login">
+     <input type="submit" value="Login">
      </form>
-      <h2><a href="signup.jsp">SignUp</a></h2>
+      <h2><a href="signup.jsp">Sign Up</a></h2>
  
   </div>
   <div class='whysignLogin'>
@@ -27,8 +27,8 @@
 {%>
 <h1>Some thing Went Wrong! Try Again !</h1>
 <%} %>
-    <h2>Online Shopping</h2>
-    <p>The Online Shopping System is the application that allows the users to shop online without going to the shops to buy them.</p>
+    <h2>The Coffee House</h2>
+    <p> The Coffee House – Where Flavor Meets Passion. </p>
   </div>
 </div>
 

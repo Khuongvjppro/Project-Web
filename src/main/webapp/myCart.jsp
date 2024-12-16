@@ -9,11 +9,123 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>My Cart</title>
 <style>
-h3
-{
-	color: yellow;
-	text-align: center;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* Font chữ cổ điển */
+    background-color: #f4f1eb; /* Màu nền nhẹ */
+ 
 }
+
+/* My Cart Title */
+.cart-title {
+    text-align: center;
+    background-color: #4b2e83; /* Màu tím đậm */
+    color: #ffcc66; /* Màu vàng nhạt */
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 80px; /* Đẩy xuống tránh topbar */
+    text-transform: uppercase;
+}
+
+/* Alert Messages */
+.alert {
+    text-align: center;
+    font-size: 18px;
+    color: #ffcc66; /* Màu vàng nổi bật */
+    margin: 15px 0;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #4b2e83; /* Màu tím đậm */
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu xám nhạt xen kẽ */
+}
+
+tbody td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tbody tr:hover {
+    background-color: #fffbf2; /* Màu nền nhẹ khi hover */
+}
+
+/* Quantity Control */
+.quantity-control a {
+    color: #28a745; /* Xanh lá */
+    font-size: 18px;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.quantity-control a:hover {
+    color: #218838; /* Màu xanh lá đậm khi hover */
+}
+
+/* Remove Button */
+.remove-btn {
+    color: white;
+    background-color: #dc3545; /* Màu đỏ */
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #c82333; /* Màu đỏ đậm khi hover */
+}
+
+/* Total Section */
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #4b2e83; /* Màu tím đậm */
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-section a {
+    text-decoration: none;
+    background-color: #28a745; /* Xanh lá */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.total-section a:hover {
+    background-color: #218838;
+}
+
 </style>
 </head>
 <body>

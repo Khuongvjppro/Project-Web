@@ -1,193 +1,159 @@
-    body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  background-color: #0080FF;
-}
-a
-{
-	text-decoration: none;
-}
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  /*margin-left: 5%;*/
-  table-layout: fixed;
-}
-
-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
-
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
-
-table th,
-table td {
-  padding: .625em;
-  text-align: center;
-}
-
-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
-
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+/* General Reset */
+body, html {
+    margin: 0;
     padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
+    font-family: 'Georgia', serif; /* Font cổ điển và sang trọng */
+    background-color: #f7f3e9; /* Nền màu kem nhẹ */
+    color: #333; /* Màu chữ tối */
+    scroll-behavior: smooth;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    position: fixed; /* Cố định thanh điều hướng ở trên cùng */
+    top: 0;
+    left: 0;
+    width: 100%; /* Chiều rộng toàn trang */
+    background-color: #5c4033; /* Màu nâu cà phê đậm */
+    display: flex;
+    justify-content: space-between; /* Logo bên trái, các liên kết bên phải */
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ nhẹ */
+    z-index: 1000;
+}
+
+/* Logo/Title - Coffee Shop */
+.topnav h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffb347; /* Màu cam nhạt nổi bật */
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
     text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
 }
 
-/*Header Css*/
-* {box-sizing: border-box;}
-    
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #e9e9e9;
-    }
-    
-    .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .topnav a.active {
-      background-color: #2196F3;
-      color: white;
-    }
-    
-    .topnav .search-container {
-      float: right;
-    }
-    
-    .topnav input[type=text] {
-      padding: 6px;
-      margin-top: 8px;
-      font-size: 17px;
-      border: none;
-    }
-    
-    .topnav .search-container button {
-      float: right;
-      padding: 6px 10px;
-      margin-top: 8px;
-      margin-right: 16px;
-      background: #ddd;
-      font-size: 17px;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .topnav .search-container button:hover {
-      background: #ccc;
-    }
-    
-    @media screen and (max-width: 600px) {
-      .topnav .search-container {
-        float: none;
-      }
-      .topnav a, .topnav input[type=text], .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-      }
-      .topnav input[type=text] {
-        border: 1px solid #ccc;  
-      }
-      
-    }
-/*footer*/
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:#ccc;
-   color:black;
-   text-align: center;
+.topnav a {
+    text-decoration: none;
+    color: #f7f3e9; /* Màu trắng kem */
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
 }
 
-.h2222 {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: #3CBC8D;
-  color: white;
+.topnav a:hover {
+    color: #ffb347; /* Màu cam nhẹ khi hover */
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    background-color: #f1e5d3; /* Màu nền nhẹ */
+    color: #333; /* Chữ tối màu */
+    width: 180px;
+}
+
+.search-container button {
+    padding: 6px 12px;
+    background-color: #ffb347; /* Nút cam */
+    color: #5c4033; /* Màu nâu đậm */
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e89b36; /* Cam đậm hơn khi hover */
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('https://example.com/coffee-background.jpg') no-repeat center center/cover;
+    height: 350px; /* Chiều cao */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Chữ trắng */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Product Table */
+table {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #fff; /* Màu trắng nền bảng */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+thead th {
+    background-color: #5c4033; /* Màu nâu đậm */
+    color: #ffb347; /* Màu cam chữ */
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f3e9; /* Màu nền xen kẽ */
+}
+
+tbody tr:hover {
+    background-color: #ffe8c5; /* Màu sáng khi hover */
+}
+
+td a {
+    text-decoration: none;
+    background-color: #28a745; /* Màu xanh lá */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #218838; /* Xanh đậm hơn khi hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #5c4033;
+    color: #ffb347;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 30px;
 }

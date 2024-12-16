@@ -1,0 +1,124 @@
+/* General body and font settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffc107;
+    color: #4b2e83;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Signup and login form styling */
+.signup, .whysign {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffcc66;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="number"],
+.signup input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #faf0e6;
+}
+
+.signup input[type="submit"] {
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.signup input[type="submit"]:hover {
+    background-color: #682c8c;
+}
+
+.signup h2 a {
+    text-decoration: none;
+    color: #4b2e83;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style for the why sign-up section */
+.whysign {
+    background-color: #f5e1a4;
+}
+
+.whysign h1 {
+    font-size: 22px;
+    color: #ffcc66;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.whysign h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b2e83;
+    margin-bottom: 15px;
+}
+
+.whysign p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .signup, .whysign {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .signup input[type="submit"] {
+        width: 100%;
+    }
+}
