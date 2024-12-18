@@ -9,15 +9,199 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>My Cart</title>
 <style>
-h3
-{
-	color: yellow;
-	text-align: center;
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Font dễ đọc và hiện đại */
+    background-color: #f5f5f7; /* Nền xám nhẹ */
+    color: #333;
+    scroll-behavior: smooth;
 }
+
+/* My Cart Title */
+.cart-title {
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient xanh đậm */
+    color: #fff;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Alert Messages */
+.alert {
+    text-align: center;
+    font-size: 18px;
+    color: #e63946; /* Màu đỏ nổi bật */
+    background-color: #fde2e4; /* Màu nền nhẹ */
+    padding: 12px 15px;
+    margin: 20px auto;
+    width: 90%;
+    border: 1px solid #e63946;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff; /* Nền trắng */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+thead th {
+    background-color: #1e3c72; /* Màu xanh đậm */
+    color: #fff;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Dòng nền xám nhẹ */
+}
+
+tbody tr:hover {
+    background-color: #e3f2fd; /* Nền xanh nhạt khi hover */
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Quantity Control */
+.quantity-control a {
+    color: #28a745; /* Màu xanh lá */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.quantity-control a:hover {
+    color: #218838;
+    transform: scale(1.2);
+}
+
+/* Remove Button */
+.remove-btn {
+    display: inline-block;
+    background-color: #e63946; /* Đỏ nổi bật */
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+}
+
+/* Total Section */
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient xanh tím */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.total-section a {
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.total-section a:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+i {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-title {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+    }
+
+    .total-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .alert {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
 </style>
 </head>
 <body>
-<div style="color: white; text-align: center; font-size: 30px;">My Cart <i class='fas fa-cart-arrow-down'></i></div>
+
+ <div style="
+    background: url('images/logo.jpg'); /*THÊM ẢNH VÀO BÌA VÀO TIÊU ĐỀ*/
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    ">My Cart <i 
+      ></i></div>
+
 <%
 String msg=request.getParameter("msg");
 if("notPossible".equals(msg))
@@ -95,6 +279,7 @@ catch(Exception e){
 %>
         </tbody>
       </table>
+      
       <br>
       <br>
       <br>

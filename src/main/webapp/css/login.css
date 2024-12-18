@@ -1,0 +1,121 @@
+/* General body and font settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1eb; /* Màu nền nhẹ, tạo cảm giác dễ chịu */
+    color: #4b2e83; /* Màu văn bản chính, tông màu tím đậm dễ đọc */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container to center the content */
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1100px;
+    background-color: #ffffff; /* Màu nền trắng cho container chính */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Signup and login form styling */
+.signup, .whysignLogin {
+    width: 40%;
+    padding: 20px;
+    background-color: #ffcc66; /* Màu vàng cà phê ấm áp */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup input[type="email"],
+.signup input[type="password"],
+.whysignLogin input[type="email"],
+.whysignLogin input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #faf0e6; /* Nền nhẹ nhàng cho các input */
+}
+
+.signup input[type="submit"],
+.whysignLogin input[type="submit"] {
+    background-color: #4b2e83; /* Màu tím đậm cho nút submit */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.signup input[type="submit"]:hover,
+.whysignLogin input[type="submit"]:hover {
+    background-color: #682c8c; /* Màu tím đậm khi hover */
+}
+
+h2 a {
+    text-decoration: none;
+    color: #4b2e83;
+    font-size: 18px;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Style for the login information section */
+.whysignLogin {
+    background-color: #f5e1a4; /* Màu nền nhạt, dễ chịu */
+}
+
+.whysignLogin h1 {
+    font-size: 22px;
+    color: #ffcc66; /* Màu vàng cà phê cho tiêu đề */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.whysignLogin h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b2e83; /* Màu tím đậm cho tiêu đề */
+}
+
+.whysignLogin p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .signup, .whysignLogin {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .signup input[type="submit"],
+    .whysignLogin input[type="submit"] {
+        width: auto;
+        margin: 0 auto;
+    }
+}

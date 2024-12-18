@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/signup-style.css">
-<title>Signup</title>
+<link rel="stylesheet" href="css/signup.css">
+<title>Sign Up</title>
 </head>
 <body>
 <div id='container'>
@@ -32,7 +32,7 @@ if("invalid".equals(msg))
 <h1>Some thing Went Wrong! Try Again !</h1>
 <%} %> 
     <h2>Online Shopping</h2>
-    <p>The Online Shopping System is the application that allows the users to shop online without going to the shops to buy them.</p>
+    <p>The Coffee House – Where Flavor Meets Passion.</p>
   </div>
 </div>
 

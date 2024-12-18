@@ -1,0 +1,170 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #232526, #414345); /* Gradient xám đậm */
+    padding: 10px 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc66; /* Màu vàng nổi bật */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.topnav .logo:hover {
+    color: #ffd480; /* Màu vàng nhạt khi hover */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0; /* Màu xám nhạt */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links a:hover {
+    color: #ffcc66; /* Màu vàng khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nổi */
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container input {
+    padding: 8px 15px;
+    border: 2px solid #ffcc66; /* Viền vàng */
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 14px;
+    width: 100px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #ffd480; /* Viền vàng nhạt khi focus */
+}
+
+.search-container button {
+    background-color: #ffcc66; /* Màu vàng */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button i {
+    color: #333;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #ffd480; /* Hover vàng nhạt */
+}
+
+/* Account Dropdown */
+.account-dropdown {
+    position: relative;
+}
+
+.account-button {
+    color:fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.account-button:hover {
+    color: #ffcc66;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #414345; /* Nền xám gradient nhẹ */
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    color: #e0e0e0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffcc66;
+    color: #333;
+}
+
+.account-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+}
