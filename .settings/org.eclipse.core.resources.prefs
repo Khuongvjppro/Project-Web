@@ -3,6 +3,12 @@ encoding//src/main/webapp/about.jsp=UTF-8
 encoding//src/main/webapp/footer.jsp=UTF-8
 encoding//src/main/webapp/home.jsp=UTF-8
 encoding//src/main/webapp/login.jsp=UTF-8
+<<<<<<< HEAD
+encoding//src/main/webapp/messageUs.jsp=UTF-8
 encoding//src/main/webapp/myCart.jsp=UTF-8
+encoding//src/main/webapp/myOrders.jsp=UTF-8
+=======
+encoding//src/main/webapp/myCart.jsp=UTF-8
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
 encoding//src/main/webapp/signup.jsp=UTF-8
 encoding/<project>=UTF-8
