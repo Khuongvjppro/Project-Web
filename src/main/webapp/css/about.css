@@ -1,0 +1,109 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Nền nhẹ */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* About Title */
+.about-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #1f1c2c, #928dab); /* Gradient hiện đại */
+    color: #FFD700; /* Màu vàng nổi bật */
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 15px 15px;
+}
+
+.about-title i {
+    margin-left: 10px;
+}
+
+/* About Content */
+.about-content {
+    background-color: #ffffff; /* Màu nền trắng */
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    font-size: 18px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-content p {
+    margin: 15px 0;
+}
+
+.about-content strong {
+    color: #1f1c2c;
+    font-weight: 700;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #FFD700; /* Vàng nổi bật */
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info a:hover {
+    color: #fbc02d;
+    transform: translateY(-2px);
+}
+
+.contact-info i {
+    font-size: 18px;
+    color: #928dab; /* Màu tím nhạt */
+    transition: color 0.3s ease;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+}
