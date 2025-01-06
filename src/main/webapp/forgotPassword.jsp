@@ -1,24 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/signup-style.css">
-<title>ForgotPassword</title>
+    <title>Quên Mật Khẩu</title>
 </head>
 <body>
-<div id='container'>
-  <div class='signup'>
-     
-      <h2><a href="">Login</a></h2>
-  </div>
-  <div class='whyforgotPassword'>
-   
-<h1>Password Changed Successfully!</h1>
-
-<h1>Some thing Went Wrong! Try Again !</h1>
-
-    <h2>Online Shopping</h2>
-    <p>The Online Shopping System is the application that allows the users to shop online without going to the shops to buy them.</p>
-  </div>
-</div>
+    <h2>Quên Mật Khẩu</h2>
+    <form action="forgotPasswordAction" method="post">
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <input type="submit" value="Gửi Yêu Cầu">
+    </form>
 </body>
 </html>

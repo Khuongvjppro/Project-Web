@@ -1,6 +1,6 @@
 <%@page import="project.ConnectionProvider"%>
 <%@page import="java.sql.*"%>
-<%
+<% 
 String email=session.getAttribute("email").toString();
 String address=request.getParameter("address");
 try{

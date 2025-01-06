@@ -14,6 +14,7 @@
      <input type="submit" value="Login">
      </form>
       <h2><a href="signup.jsp">Sign Up</a></h2>
+      <h2><a href="forgotPassword.jsp">Forgot Password</a></h2>
  
   </div>
   <div class='whysignLogin'>
