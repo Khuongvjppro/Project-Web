@@ -1,0 +1,85 @@
+/* Header Container */
+.topnav {
+    background: linear-gradient(135deg, #4e342e, #3e2723);  /* Nâu đậm chuyển gradient */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #d2b48c; /* Vàng đồng */
+}
+
+/* Logo */
+.topnav .logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.topnav .logo i {
+    margin-left: 10px;
+    color: #d2b48c;
+}
+
+/* Navigation Links */
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;
+    transition: color 0.3s ease, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.topnav a:hover {
+    color: #d2b48c;  /* Vàng đồng khi hover */
+    transform: translateY(-3px);
+}
+
+/* Icon trong liên kết */
+.topnav a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* Nút trên Header */
+.topnav .btn {
+    background-color: #d2b48c;
+    color: #3e2723;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.topnav .btn:hover {
+    background-color: #c19a6b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(210, 180, 140, 0.4);
+}
+
+/* Responsive Điều Chỉnh */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topnav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .topnav .btn {
+        margin-top: 10px;
+    }
+}

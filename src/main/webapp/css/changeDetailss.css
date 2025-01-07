@@ -1,0 +1,98 @@
+/* Reset và cấu hình cơ bản */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3d5ca;  /* Nền be nhẹ */
+}
+
+/* Container chính */
+.details-container {
+    background-color: #fff;  /* Màu trắng chủ đạo */
+    width: 60%;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto;
+    animation: fadeIn 0.7s ease-in-out;
+    border: 2px solid #c19a6b;  /* Viền vàng đồng */
+}
+
+/* Hiệu ứng mượt mà khi load trang */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tiêu đề chính */
+.details-container h1 {
+    font-size: 48px;
+    color: #4e342e;  /* Nâu đậm */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.details-container p {
+    font-size: 18px;
+    color: #795548;  /* Nâu nhạt */
+    margin-bottom: 40px;
+}
+
+/* Dòng kẻ ngang */
+hr {
+    width: 80%;
+    border: 1px solid #d7ccc8;
+    margin: 30px auto;
+}
+
+/* Thông tin */
+.details-container h3 {
+    font-size: 28px;
+    color: #4e342e;  /* Nâu đậm */
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.details-container h3 span {
+    font-weight: 400;
+    color: #8d6e63;  /* Nâu trung tính */
+}
+
+/* Thông báo lỗi hoặc thành công */
+.message {
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.success {
+    color: #2e7d32;  /* Xanh lá đậm */
+}
+
+.error {
+    color: #c62828;  /* Đỏ rượu */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .details-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .details-container h1 {
+        font-size: 36px;
+    }
+
+    .details-container h3 {
+        font-size: 22px;
+    }
+}
