@@ -16,18 +16,6 @@
             <a href="changePassword.jsp">Change Password <i class='fas fa-key'></i></a>
             <a href="addChangeAddress.jsp">Add or change Address <i class='fas fa-map-marker-alt'></i></a>
             <a href="changeMobileNumber.jsp">Change Mobile Number <i class='fas fa-phone'></i></a>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            <a href="">Add or change Address <i class='fas fa-map-marker-alt'></i></a>
-            <a href="">Change Mobile Number <i class='fas fa-phone'></i></a>
-
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
           </div>
            <br>
            <!--table-->

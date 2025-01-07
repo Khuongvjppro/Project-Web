@@ -5,19 +5,6 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
     color: #333;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
-    color: #333;
-=======
-    font-family: 'Playfair Display', serif; /* Phông chữ cổ điển và sang trọng */
-    color: #fff; /* Màu chữ trắng */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
     scroll-behavior: smooth;
 }
 
@@ -31,39 +18,11 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #232526, #414345); /* Gradient xám đậm */
-    padding: 10px 70px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-=======
-    position: fixed; /* Cố định ở trên cùng */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Nền đen trong suốt */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
     z-index: 1000;
 }
 
 .topnav .logo {
     font-size: 28px;
-=======
-<<<<<<< HEAD
-    font-size: 28px;
     font-weight: bold;
     color: #d4a373; /* Màu vàng nổi bật */
     text-transform: uppercase;
@@ -154,119 +113,11 @@ body, html {
     display: flex;
     align-items: center;
     gap: 5px;
-<<<<<<< HEAD
-=======
-=======
-    font-size: 24px;
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
-    font-weight: bold;
-    color: #d4a373; /* Màu vàng nổi bật */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.topnav .logo:hover {
-    color: #e8b986; /* Màu vàng nhạt khi hover */
-}
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #e0e0e0; /* Màu xám nhạt */
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.nav-links a:hover {
-    color: #d4a373; /* Màu vàng khi hover */
-    transform: translateY(-3px); /* Hiệu ứng nổi */
-}
-
-/* Search Box */
-.search-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.search-container input {
-    padding: 8px 15px;
-    border: 2px solid #d4a373; /* Viền vàng */
-    border-radius: 20px 0 0 20px;
-    outline: none;
-    font-size: 14px;
-    width: 100px;
-    background-color: #fff;
-    color: #333;
-    transition: border-color 0.3s ease;
-}
-
-.search-container input:focus {
-    border-color: #e8b986; /* Viền vàng nhạt khi focus */
-}
-
-.search-container button {
-    background-color: #d4a373; /* Màu vàng */
-    border: none;
-    padding: 10px 15px;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-<<<<<<< HEAD
-    transition: background-color 0.3s ease;
-}
-
-.search-container button i {
-    color: #333;
-    font-size: 16px;
-}
-
-.search-container button:hover {
-    background-color: #e8b986; /* Hover vàng nhạt */
-}
-
-/* Account Dropdown */
-.account-dropdown {
-    position: relative;
-}
-
-.account-button {
-    color:fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-=======
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
     transition: color 0.3s ease;
 }
 
 .account-button:hover {
-<<<<<<< HEAD
     color: #d4a373;
-=======
-<<<<<<< HEAD
-    color: #d4a373;
-=======
-<<<<<<< HEAD
-    color: #ffcc66;
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
 }
 
 .dropdown-content {
@@ -283,33 +134,6 @@ body, html {
 
 .dropdown-content a {
     color: #e0e0e0;
-<<<<<<< HEAD
-=======
-=======
-    color: #ffcc66; /* Màu vàng khi hover */
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background: #414345; /* Nền xám gradient nhẹ */
-    min-width: 160px;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    z-index: 1001;
-}
-
-.dropdown-content a {
-<<<<<<< HEAD
-    color: #e0e0e0;
-=======
-    color: #fff;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -318,43 +142,14 @@ body, html {
 }
 
 .dropdown-content a:hover {
-<<<<<<< HEAD
     background-color: #d4a373;
     color: #333;
 }
 
-=======
-<<<<<<< HEAD
-    background-color: #d4a373;
-    color: #333;
-}
-
-=======
-<<<<<<< HEAD
-    background-color: #ffcc66;
-    color: #333;
-}
-
-=======
-    background-color: #ffcc66; /* Màu vàng */
-    color: #000; /* Chữ đen */
-}
-
-/* Show Dropdown on Hover */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
 .account-dropdown:hover .dropdown-content {
     display: block;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
 /* Responsive Design */
 @media (max-width: 768px) {
     .topnav {
@@ -373,11 +168,3 @@ body, html {
         width: 150px;
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
