@@ -1,40 +1,52 @@
-<%@include file="header.jsp"%>
-<%@include file="footer.jsp"%>
-<%@page errorPage="error.jsp" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <link rel="stylesheet" href="css/about.css">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Coffee Shop</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- About Title -->
-    <div class="about-title">About <i class="fa fa-address-book"></i></div>
 
-    <!-- About Content -->
-    <div class="about-content">
-        <p><strong>BTech Days</strong></p>
-        <p>Hey everyone!!</p>
-        <p>
-            I make free programming tutorials for beginners & project videos with source code.
-            That include <strong>Java</strong> for beginners, <strong>C# (.NET Tutorial)</strong>, JFrame,
-            JDBC, JSP, etc.
-        </p>
-        <p>
-            We make videos on: <br>
-            - <strong>DBMS</strong> <br>
-            - <strong>Computer Networking</strong> <br>
-            - <strong>BPM</strong> <br>
-            - <strong>OS</strong> and many more!
-        </p>
-        <p>So kindly subscribe to our channel!</p>
+    <!-- Navigation Bar -->
+    <jsp:include page="header.jsp" />
 
-        <!-- Contact Information -->
-        <div class="contact-info">
-            <p>Contact us at: <a href="mailto:btechdays.care@gmail.com"><i class="fa fa-envelope"></i> btechdays.care@gmail.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/btechdays" target="_blank"><i class="fa fa-instagram"></i> @btechdays</a></p>
+    <!-- About Section -->
+    <div class="about-container">
+        <div class="about-title">
+            About Us <i class="fa fa-address-book"></i>
+        </div>
+
+        <div class="about-content">
+            <h2>Welcome to <strong>The Coffee Shop</strong></h2>
+            <p>At <b>The Coffee Shop</b>, we are passionate about teaching programming and providing project-based tutorials for beginners.</p>
+            <p>Our tutorials cover a wide range of technologies, including:</p>
+
+            <ul>
+                <li><i class="fa fa-database"></i> Database Management Systems (DBMS)</li>
+                <li><i class="fa fa-network-wired"></i> Computer Networking</li>
+                <li><i class="fa fa-cogs"></i> Business Process Management (BPM)</li>
+                <li><i class="fa fa-server"></i> Operating Systems (OS)</li>
+            </ul>
+
+            <p>We believe in providing quality education for everyone, and we invite you to join our growing community!</p>
+
+            <!-- Contact Section -->
+            <div class="contact-info">
+                <p><i class="fa fa-envelope"></i> Email: <a href="mailto:btechdays.care@gmail.com">btechdays.care@gmail.com</a></p>
+                <p><i class="fa fa-instagram"></i> Instagram: <a href="https://instagram.com/btechdays" target="_blank">@btechdays</a></p>
+            </div>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <jsp:include page="footer.jsp" />
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 <%@page import="project.ConnectionProvider"%>
 <%@page import="java.sql.*"%>
-<%
+<% 
 try{
 	Connection con = ConnectionProvider.getCon();
 	Statement st=con.createStatement();

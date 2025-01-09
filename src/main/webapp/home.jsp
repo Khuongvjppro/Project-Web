@@ -140,6 +140,7 @@ body, html {
     .product-card {
         margin: 0 10px;
     }
+<<<<<<< HEAD
     .product-card img {
     width: 100%;                   
     height: 200px;                
@@ -151,6 +152,8 @@ body, html {
 
 .product-card img:hover {
     transform: scale(1.2); 
+=======
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
 }
 </style>
 </head>
@@ -191,6 +194,7 @@ try {
     Statement st = con.createStatement();
     ResultSet rs = st.executeQuery("SELECT * FROM product WHERE active='Yes'");
     while (rs.next()) {
+<<<<<<< HEAD
         String productName = rs.getString(2);  // Tên sản phẩm
         String imagePath = "images/product-placeholder.jpg";  // Ảnh mặc định
 
@@ -275,6 +279,19 @@ try {
         <!-- Giá Sản Phẩm -->
         <p><b>&#8377; <%= rs.getString(4) %></b></p>
         <!-- Nút Thêm Vào Giỏ Hàng -->
+=======
+%>
+    <div class="product-card">
+        <!-- Product Image -->
+        <img src="images/product-placeholder.jpg" alt="Product Image">
+        <!-- Product Name -->
+        <h3><%= rs.getString(2) %></h3>
+        <!-- Product Category -->
+        <p>Category: <%= rs.getString(3) %></p>
+        <!-- Product Price -->
+        <p><b>&#8377; <%= rs.getString(4) %></b></p>
+        <!-- Add to Cart Button -->
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
         <a href="addToCartAction.jsp?id=<%= rs.getString(1) %>">Add to Cart</a>
     </div>
 <%
