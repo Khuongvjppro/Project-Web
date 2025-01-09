@@ -5,14 +5,26 @@
 <head>
 <title>welcome</title>
 <style>
-h1
-{
-color: white;
-text-align: center;
-font-size: 100px;
-}</style>
+
+</style>
 </head>
 <body>
-<h1>welcome admin!</h1>
+<div style="
+    background: url('../images/logo.jpg');
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    ">Admin <i 
+      ></i></div>
+
 </body>
 </html>
