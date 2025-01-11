@@ -140,6 +140,20 @@ body, html {
     .product-card {
         margin: 0 10px;
     }
+<<<<<<< HEAD
+    .product-card img {
+    width: 100%;                   
+    height: 200px;                
+    object-fit: cover;             
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;  
+    transition: transform 0.3s;    
+}
+
+.product-card img:hover {
+    transform: scale(1.2); 
+=======
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
 }
 </style>
 </head>
@@ -180,6 +194,92 @@ try {
     Statement st = con.createStatement();
     ResultSet rs = st.executeQuery("SELECT * FROM product WHERE active='Yes'");
     while (rs.next()) {
+<<<<<<< HEAD
+        String productName = rs.getString(2);  // Tên sản phẩm
+        String imagePath = "images/product-placeholder.jpg";  // Ảnh mặc định
+
+        // Nếu sản phẩm là "soda", hiển thị ảnh logo.jpg
+        if (productName.equalsIgnoreCase("Cafe sữa")) {
+            imagePath = "images/logo.jpg";
+        }else  if (productName.equalsIgnoreCase("Cafe đen")) {
+            imagePath = "images/logo.jpg";
+        }
+        else  if (productName.equalsIgnoreCase("Cafe trứng")) {
+            imagePath = "images/logo.jpg";
+        }
+        else  if (productName.equalsIgnoreCase("Cafe muối")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Bạc xỉu")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Cafe sữa dừa")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà dâu")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà bưởi")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà chanh")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà trái cây")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà chanh dây")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Trà vải")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Hồng trà")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Soda xoài")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Soda bạc hà")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Soda blue")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Soda việt quất")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        else  if (productName.equalsIgnoreCase("Soda nho")) {
+            imagePath = "images/logo.jpg";
+        }
+    
+        
+%>
+    <div class="product-card">
+        <!-- Ảnh Sản Phẩm -->
+        <img src="<%= imagePath %>" alt="<%= productName %> Image">
+        <!-- Tên Sản Phẩm -->
+        <h3><%= productName %></h3>
+        <!-- Danh Mục Sản Phẩm -->
+        <p>Category: <%= rs.getString(3) %></p>
+        <!-- Giá Sản Phẩm -->
+        <p><b>&#8377; <%= rs.getString(4) %></b></p>
+        <!-- Nút Thêm Vào Giỏ Hàng -->
+=======
 %>
     <div class="product-card">
         <!-- Product Image -->
@@ -191,6 +291,7 @@ try {
         <!-- Product Price -->
         <p><b>&#8377; <%= rs.getString(4) %></b></p>
         <!-- Add to Cart Button -->
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
         <a href="addToCartAction.jsp?id=<%= rs.getString(1) %>">Add to Cart</a>
     </div>
 <%

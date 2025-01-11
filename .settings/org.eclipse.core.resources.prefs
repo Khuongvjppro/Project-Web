@@ -2,6 +2,10 @@
 <<<<<<<=HEAD
 >>>>>>>=c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
 eclipse.preferences.version=1
+<<<<<<< HEAD
+encoding//src/main/webapp/admin/addNewProduct.jsp=UTF-8
+encoding//src/main/webapp/admin/adminHeader.jsp=UTF-8
+=======
 encoding//src/main/webapp/about.jsp=UTF-8
 encoding//src/main/webapp/changeDetails.jsp=UTF-8
 encoding//src/main/webapp/changeDetailsHeader.jsp=UTF-8
@@ -12,4 +16,5 @@ encoding//src/main/webapp/messageUs.jsp=UTF-8
 encoding//src/main/webapp/myCart.jsp=UTF-8
 encoding//src/main/webapp/myOrders.jsp=UTF-8
 encoding//src/main/webapp/signup.jsp=UTF-8
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
 encoding/<project>=UTF-8

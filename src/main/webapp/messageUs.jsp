@@ -4,7 +4,7 @@
 <%@include file="footer.jsp" %>
 <html>
 <head>
-<link rel="stylesheet" href="css/messageUss.css">
+<link rel="stylesheet" href="css/messageUs.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <title>Message Us</title>
 </head>

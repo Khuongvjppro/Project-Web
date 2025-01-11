@@ -5,12 +5,31 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
     color: #333;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
     color: #333;
     font-family: 'Playfair Display', serif; /* Phông chữ cổ điển và sang trọng */
     color: #fff; /* Màu chữ trắng */
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     scroll-behavior: smooth;
 }
 
@@ -24,6 +43,17 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,13 +72,31 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
 
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     z-index: 1000;
 }
 
 .topnav .logo {
     font-size: 28px;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     font-size: 28px;
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
     font-weight: bold;
     color: #d4a373; /* Màu vàng nổi bật */
     text-transform: uppercase;
@@ -139,6 +187,14 @@ body, html {
     display: flex;
     align-items: center;
     gap: 5px;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     font-size: 24px;
     font-weight: bold;
     color: #d4a373; /* Màu vàng nổi bật */
@@ -230,13 +286,39 @@ body, html {
     display: flex;
     align-items: center;
     gap: 5px;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     transition: color 0.3s ease;
 }
 
 .account-button:hover {
     color: #d4a373;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     color: #d4a373;
     color: #ffcc66;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
 }
 
 .dropdown-content {
@@ -253,6 +335,16 @@ body, html {
 
 .dropdown-content a {
     color: #e0e0e0;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     color: #ffcc66; /* Màu vàng khi hover */
 
 }
@@ -273,6 +365,14 @@ body, html {
 
     color: #e0e0e0;
     color: #fff;
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -284,6 +384,21 @@ body, html {
     background-color: #d4a373;
     color: #333;
 
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    background-color: #d4a373;
+    color: #333;
+}
+
+=======
+<<<<<<< HEAD
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
     background-color: #ffcc66;
     color: #333;
 
@@ -292,10 +407,34 @@ body, html {
 }
 
 /* Show Dropdown on Hover */
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
 .account-dropdown:hover .dropdown-content {
     display: block;
 }
 
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
 /* Responsive Design */
 @media (max-width: 768px) {
     .topnav {
@@ -314,4 +453,21 @@ body, html {
         width: 150px;
     }
 }
+<<<<<<< HEAD:src/main/webapp/css/mainn.css
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
+>>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+>>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
+>>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+>>>>>>> be3840bae36600c302e6333fc0e00eefc4d2978c
+>>>>>>> 4f73472f13fed71842d3aac7692e4be52b9013cf:src/main/webapp/css/main.css
