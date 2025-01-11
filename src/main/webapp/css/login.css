@@ -1,8 +1,8 @@
 /* General body and font settings */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f1eb; /* Màu nền nhẹ, tạo cảm giác dễ chịu */
-    color: #4b2e83; /* Màu văn bản chính, tông màu tím đậm dễ đọc */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7efe9; /* Nền tông màu cà phê nhạt */
+    color: #4a2c2a; /* Tông nâu đậm tạo sự sang trọng */
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,58 +16,68 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    max-width: 1100px;
-    background-color: #ffffff; /* Màu nền trắng cho container chính */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff; /* Nền trắng sạch sẽ */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Hiệu ứng bóng đổ mềm mại */
+    padding: 40px;
+    animation: fadeIn 1.5s ease-in-out; /* Hiệu ứng mờ dần khi tải trang */
 }
 
 /* Signup and login form styling */
 .signup, .whysignLogin {
-    width: 40%;
-    padding: 20px;
-    background-color: #ffcc66; /* Màu vàng cà phê ấm áp */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 30px;
+    background-color: #ffe4c4; /* Nền màu cà phê nhạt */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+}
+
+.signup:hover, .whysignLogin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .signup input[type="email"],
 .signup input[type="password"],
 .whysignLogin input[type="email"],
 .whysignLogin input[type="password"] {
-    width: 95%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 16px;
     color: #333;
-    background-color: #faf0e6; /* Nền nhẹ nhàng cho các input */
+    background-color: #faf8f5; /* Nền sáng tạo sự sạch sẽ */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Hiệu ứng lõm nhẹ */
 }
 
 .signup input[type="submit"],
 .whysignLogin input[type="submit"] {
-    background-color: #4b2e83; /* Màu tím đậm cho nút submit */
+    background-color: #6b4226; /* Màu cà phê đậm */
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    width: 100%;
+    border-radius: 25px;
+    padding: 15px 25px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .signup input[type="submit"]:hover,
 .whysignLogin input[type="submit"]:hover {
-    background-color: #682c8c; /* Màu tím đậm khi hover */
+    background-color: #4a2f1a; /* Màu cà phê đậm hơn khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ */
 }
 
 h2 a {
     text-decoration: none;
-    color: #4b2e83;
+    color: #6b4226; /* Tông cà phê ấm áp */
     font-size: 18px;
     margin-top: 15px;
     display: inline-block;
@@ -76,29 +86,43 @@ h2 a {
 
 /* Style for the login information section */
 .whysignLogin {
-    background-color: #f5e1a4; /* Màu nền nhạt, dễ chịu */
+    background-color: #f6e7d4; /* Màu nền trung tính, dễ chịu */
 }
 
 .whysignLogin h1 {
-    font-size: 22px;
-    color: #ffcc66; /* Màu vàng cà phê cho tiêu đề */
+    font-size: 24px;
+    color: #6b4226; /* Màu nâu cà phê */
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .whysignLogin h2 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    color: #4b2e83; /* Màu tím đậm cho tiêu đề */
+    color: #6b4226; /* Tông màu cà phê ấm áp */
 }
 
 .whysignLogin p {
     text-align: center;
     font-size: 18px;
-    line-height: 1.6;
-    margin-top: 10px;
+    line-height: 1.8;
+    margin-top: 15px;
     color: #555;
+}
+
+/* Coffee icon or branding style */
+.branding {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.branding img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive layout */
@@ -117,5 +141,17 @@ h2 a {
     .whysignLogin input[type="submit"] {
         width: auto;
         margin: 0 auto;
+    }
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -9,7 +9,7 @@
     <form action="forgotPasswordAction" method="post">
         <label>Email:</label><br>
         <input type="email" name="email" required><br><br>
-        <input type="submit" value="Gửi Yêu Cầu">
+        <input type="submit" value="Lấy Mật Khẩu">
     </form>
 </body>
 </html>

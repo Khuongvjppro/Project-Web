@@ -4,7 +4,7 @@
 <%@include file="../footer.jsp" %>
 <html>
 <head>
-<link rel="stylesheet" href="../css/addNewProduct-style.css">
+<link rel="stylesheet" href="../css/addNewProduct_style.css">
 <title>Add New Product</title>
 </head>
 <body>

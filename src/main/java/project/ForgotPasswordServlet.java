@@ -17,31 +17,28 @@ public class ForgotPasswordServlet extends HttpServlet {
         String email = request.getParameter("email");
 
         try {
+            // Kết nối đến cơ sở dữ liệu
             Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM user WHERE email=?");
+            PreparedStatement ps = con.prepareStatement("SELECT password FROM user WHERE email=?");
             ps.setString(1, email);
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                // Tạo mật khẩu mới (ngẫu nhiên hoặc mặc định)
-                String newPassword = "123456";
-                
-                // Cập nhật mật khẩu trong cơ sở dữ liệu
-                PreparedStatement updatePs = con.prepareStatement("UPDATE user SET password=? WHERE email=?");
-                updatePs.setString(1, newPassword);
-                updatePs.setString(2, email);
-                updatePs.executeUpdate();
+                // Lấy mật khẩu từ cơ sở dữ liệu
+                String password = rs.getString("password");
 
-                // Gửi email khôi phục
+                // Gửi mật khẩu qua email
                 String subject = "Khôi phục mật khẩu - The Coffee Shop";
-                String content = "Mật khẩu mới của bạn là: " + newPassword;
+                String content = "Mật khẩu của bạn là: " + password;
                 EmailSender emailSender = new EmailSender();
                 emailSender.sendEmail(email, subject, content);
 
+                // Thông báo thành công
                 HttpSession session = request.getSession();
-                session.setAttribute("message", "Mật khẩu mới đã được gửi tới email của bạn.");
+                session.setAttribute("message", "Mật khẩu đã được gửi đến email của bạn.");
                 response.sendRedirect("forgotPassword.jsp");
             } else {
+                // Thông báo lỗi nếu email không tồn tại
                 HttpSession session = request.getSession();
                 session.setAttribute("error", "Email không tồn tại trong hệ thống.");
                 response.sendRedirect("forgotPassword.jsp");
@@ -52,4 +49,3 @@ public class ForgotPasswordServlet extends HttpServlet {
         }
     }
 }
-

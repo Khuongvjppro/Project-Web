@@ -27,7 +27,7 @@
         <hr>
         <h3>Mobile Number: <span><%=rs.getString(3) %></span></h3>
         <hr>
-        <button class="button" onclick="window.location.href='updateDetails.jsp'">Update Details <i class="fa fa-arrow-right"></i></button>
+     
     <%
         }
     } catch (Exception e) {

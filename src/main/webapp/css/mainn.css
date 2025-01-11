@@ -5,22 +5,12 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
     color: #333;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
+
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
     color: #333;
-=======
     font-family: 'Playfair Display', serif; /* Phông chữ cổ điển và sang trọng */
     color: #fff; /* Màu chữ trắng */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     scroll-behavior: smooth;
 }
 
@@ -34,12 +24,6 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +32,7 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
-=======
+
     position: fixed; /* Cố định ở trên cùng */
     top: 0;
     left: 0;
@@ -58,19 +42,12 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+
     z-index: 1000;
 }
 
 .topnav .logo {
     font-size: 28px;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
     font-size: 28px;
     font-weight: bold;
     color: #d4a373; /* Màu vàng nổi bật */
@@ -162,12 +139,7 @@ body, html {
     display: flex;
     align-items: center;
     gap: 5px;
-<<<<<<< HEAD
-=======
-=======
     font-size: 24px;
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     font-weight: bold;
     color: #d4a373; /* Màu vàng nổi bật */
     text-transform: uppercase;
@@ -258,28 +230,13 @@ body, html {
     display: flex;
     align-items: center;
     gap: 5px;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     transition: color 0.3s ease;
 }
 
 .account-button:hover {
     color: #d4a373;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
     color: #d4a373;
-=======
-<<<<<<< HEAD
     color: #ffcc66;
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 .dropdown-content {
@@ -296,13 +253,8 @@ body, html {
 
 .dropdown-content a {
     color: #e0e0e0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
     color: #ffcc66; /* Màu vàng khi hover */
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
+
 }
 
 .dropdown-content {
@@ -318,14 +270,9 @@ body, html {
 }
 
 .dropdown-content a {
-<<<<<<< HEAD
+
     color: #e0e0e0;
-=======
     color: #fff;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -336,46 +283,19 @@ body, html {
 .dropdown-content a:hover {
     background-color: #d4a373;
     color: #333;
-}
 
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-    background-color: #d4a373;
-    color: #333;
-}
-
-=======
-<<<<<<< HEAD
     background-color: #ffcc66;
     color: #333;
-}
 
-=======
     background-color: #ffcc66; /* Màu vàng */
     color: #000; /* Chữ đen */
 }
 
 /* Show Dropdown on Hover */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 .account-dropdown:hover .dropdown-content {
     display: block;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 /* Responsive Design */
 @media (max-width: 768px) {
     .topnav {
@@ -394,14 +314,4 @@ body, html {
         width: 150px;
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
+

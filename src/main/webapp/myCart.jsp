@@ -17,46 +17,11 @@ body, html {
     background-color: #f5f5f7; /* Nền xám nhẹ */
     color: #333;
     scroll-behavior: smooth;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-/* General Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif; /* Font dễ đọc và hiện đại */
-    background-color: #f5f5f7; /* Nền xám nhẹ */
-    color: #333;
-    scroll-behavior: smooth;
-=======
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif; /* Font chữ cổ điển */
-    background-color: #f4f1eb; /* Màu nền nhẹ */
- 
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* My Cart Title */
 .cart-title {
     text-align: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient xanh đậm */
     color: #fff;
     padding: 20px;
@@ -66,44 +31,12 @@ body, html {
     letter-spacing: 2px;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
-=======
-=======
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
-=======
-=======
-    background-color: #4b2e83; /* Màu tím đậm */
-    color: #ffcc66; /* Màu vàng nhạt */
-    padding: 20px 0;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 80px; /* Đẩy xuống tránh topbar */
-    text-transform: uppercase;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* Alert Messages */
 .alert {
     text-align: center;
     font-size: 18px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     color: #e63946; /* Màu đỏ nổi bật */
     background-color: #fde2e4; /* Màu nền nhẹ */
     padding: 12px 15px;
@@ -112,19 +45,6 @@ body, html {
     border: 1px solid #e63946;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    color: #ffcc66; /* Màu vàng nổi bật */
-    margin: 15px 0;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* Table Styling */
@@ -132,13 +52,6 @@ table {
     width: 90%;
     margin: 30px auto;
     border-collapse: collapse;
-<<<<<<< HEAD
-=======
-    background: #fff; /* Nền trắng */
-    border-radius: 12px;
-=======
-<<<<<<< HEAD
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     background: #fff; /* Nền trắng */
     border-radius: 12px;
     overflow: hidden;
@@ -149,43 +62,10 @@ thead th {
     background-color: #1e3c72; /* Màu xanh đậm */
     color: #fff;
     padding: 16px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-thead th {
-<<<<<<< HEAD
-    background-color: #1e3c72; /* Màu xanh đậm */
-    color: #fff;
-    padding: 16px;
-=======
-    background-color: #4b2e83; /* Màu tím đậm */
-    color: white;
-    padding: 15px;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     text-transform: uppercase;
     font-size: 16px;
 }
 
-<<<<<<< HEAD
-=======
-tbody tr {
-    transition: background-color 0.3s ease;
-=======
-<<<<<<< HEAD
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 tbody tr {
     transition: background-color 0.3s ease;
 }
@@ -203,50 +83,10 @@ tbody td {
     text-align: center;
     font-size: 16px;
     border-bottom: 1px solid #ddd;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Màu xám nhạt xen kẽ */
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Dòng nền xám nhẹ */
-}
-
-tbody tr:hover {
-<<<<<<< HEAD
-    background-color: #e3f2fd; /* Nền xanh nhạt khi hover */
-}
-
-tbody td {
-    padding: 15px;
-    text-align: center;
-    font-size: 16px;
-    border-bottom: 1px solid #ddd;
-=======
-    background-color: #fffbf2; /* Màu nền nhẹ khi hover */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* Quantity Control */
 .quantity-control a {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     color: #28a745; /* Màu xanh lá */
     font-size: 20px;
     margin: 0 10px;
@@ -256,43 +96,10 @@ tbody td {
 .quantity-control a:hover {
     color: #218838;
     transform: scale(1.2);
-<<<<<<< HEAD
-=======
-=======
-}
-
-.quantity-control a:hover {
-    color: #218838;
-    transform: scale(1.2);
-<<<<<<< HEAD
-=======
-=======
-    color: #28a745; /* Xanh lá */
-    font-size: 18px;
-    margin: 0 8px;
-    transition: color 0.3s;
-}
-
-.quantity-control a:hover {
-    color: #218838; /* Màu xanh lá đậm khi hover */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* Remove Button */
 .remove-btn {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     display: inline-block;
     background-color: #e63946; /* Đỏ nổi bật */
     color: #fff;
@@ -306,31 +113,6 @@ tbody td {
 .remove-btn:hover {
     background-color: #c82333;
     transform: translateY(-3px);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    color: white;
-    background-color: #dc3545; /* Màu đỏ */
-    padding: 8px 12px;
-    border-radius: 5px;
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.remove-btn:hover {
-<<<<<<< HEAD
-    background-color: #c82333;
-    transform: translateY(-3px);
-=======
-    background-color: #c82333; /* Màu đỏ đậm khi hover */
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 /* Total Section */
@@ -339,16 +121,6 @@ tbody td {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     margin: 40px auto;
     padding: 25px;
     background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient xanh tím */
@@ -357,76 +129,20 @@ tbody td {
     font-weight: bold;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-<<<<<<< HEAD
-=======
-=======
-    font-weight: bold;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-<<<<<<< HEAD
-=======
-=======
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #4b2e83; /* Màu tím đậm */
-    color: white;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 .total-section a {
     text-decoration: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     background-color: #28a745;
     color: #fff;
     padding: 12px 25px;
     border-radius: 8px;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    background-color: #28a745; /* Xanh lá */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 }
 
 .total-section a:hover {
     background-color: #218838;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -465,19 +181,6 @@ i {
 }
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-}
-
->>>>>>> c0e4f0f1e23c8febaad337f016d34d46edc2b4ef
->>>>>>> 0c6068238b1ebf0322a4fc88daf6e12f0418a757
->>>>>>> f9eaa6f8f37402f78afec2c104a60a243fcd943d
->>>>>>> c7774d9fce8ee5353505428a7434dd0dab3a6bc7
 </style>
 </head>
 <body>
